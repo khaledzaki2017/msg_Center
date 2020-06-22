@@ -21,7 +21,7 @@ const settings = {
 // get a storage instance
 if (settings.storage == "redis") {
   console.log("storage backend: Redis");
-  const storageBackend = require("./lib/storage/redis");
+  storageBackend = require("./lib/storage/redis");
 } else {
   console.log("storage backend must be redis");
   process.exit(1);
